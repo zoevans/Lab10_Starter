@@ -16,12 +16,23 @@
   <script src="assets/scripts/partyHorn.js" type="module"></script>
 </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HDEZTV9X1G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HDEZTV9X1G');
+</script>
+
 <body>
   <header>
     <nav>
       <a href="speechSynth.html" title="Go to speech synthesizer">Speech Synthesizer</a>
     </nav>
   </header>
+
   <main>
     <section id="expose">
       <header>
@@ -42,6 +53,19 @@
       <audio class="hidden" src=""></audio>
     </section>
   </main>
+
+  <script>
+    // Generate a random number between 0 and 1
+    const randomNumber = Math.random();
+    // Determine if the class should be applied
+    const shouldApplyClass = randomNumber < 0.5;
+    // Get the body element
+    let body = document.querySelector('body');
+    // Apply or remove the "blue" class based on the random number
+    if (shouldApplyClass) {
+         body.classList.add('blue');
+    }
+</script>
 </body>
 
 </html>
